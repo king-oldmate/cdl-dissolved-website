@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clair de Lune - Sydney Classic/Jazz Trio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/228006f19a.js" crossorigin="anonymous"></script>
+    <style>
+
+        .example-marquee {
+            position: relative;
+        }
+
+        .content {
+            display: table;
+            width: 100%;
+            min-height: 100vh;
+            z-index: 1;
+            position: relative;
+        }
+
+        .content .inner {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .content .inner h1,
+        .content .inner h2 {
+          color: white;
+          text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .content .inner h1 {
+          font-size: 62px;
+        }
+        
+        .video-background-controls button {
+            font-size: 32px;
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            height: 32px;
+            width: 32px;
+            border-radius: 16px;
+            line-height: 32px;
+            border: none;
+            background: none;
+            -webkit-appearance: none;
+            color: white;
+            filter: drop-shadow(0px 0px 1px black);
+            cursor: pointer;
+            opacity: 1;
+            transition: all 250ms ease-in-out;
+            margin-left: 10px;
+        }
+
+        .video-background-controls button:hover {
+            opacity: 0.5;
+        }
+
+        iframe {
+            transition: opacity 500ms ease-in-out;
+            /* transition-delay: 250ms; */
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.min.js"></script>
+</head>
+<body>
+
+    <main>
+        <section class="section-hero sticky-container">
+            <div class="section-hero-video sticky-content">
+                <div class="video"
+                    data-vbg="https://www.youtube.com/watch?v=7DLRTtGkXow"
+                    data-vbg-mute-button="true"
+                    data-vbg-end-at="188"
+                    load-background="false"
+                    >
+                </div>
+
+                <script type="text/javascript">
+
+                </script>
+                <div class="content">
+                    <h1>Clair de Lune</h1>
+                </div>
+            </div>
+        </section>
+        <section class="section-about" id="about">
+            <div class="section-content">
+                <h2>About</h2>
+                <p class="copy about-copy">Clair de Lune is a classical-jazz musical trio consisting of piano, violin and soprano (Nathaniel, Judy, and Bregitte). The three met each other whilst they were studying a Bachelor of Music at the Australian Institute of Music, and went on to experiment in a variety of genres. They love performing in a variety of locations for weddings, corporate events and parties and have even gone busking in the Botanical Gardens (The spot they chose in the garden nearly resulted them being run over by the reversing garbage truck!) They love to bring popular pieces into each program to allow a delightful bite size concert full of memories and beautiful sounds. </p>
+            </div>
+        </section>
+        <section class="section-music" id="music">
+            <div class="section-content">
+                <h2>Music</h2>
+                <div id="musicPlayer" class="music-player">
+                    <div id="musicInfo">
+
+                    </div>
+                    <div id="playerControls">
+
+                    </div>
+                    <div id="tracklist">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-contact" id="contact">
+            <div class="section-content">
+                <h2>Contact</h2>
+                <p class="copy contact-copy">We are located in Sydney and are always excited to perform. If you are interested in our music and would like to hear more from us, send us an email:  </p>
+            </div>
+        </section>
+        <footer>
+            copyright
+        </footer>
+    </main>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/player.js"></script>
+</body>
+</html>

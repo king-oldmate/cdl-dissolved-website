@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Syncopate:wght@700&display=swap");
+:root {
+  --links: #8FAFCC;
+  --background: rgb(250, 250, 250);
+  --text:rgb(20, 20, 20);
+  --header-height: 55px;
+}
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Familjen Grotesk", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  min-height: 200vh;
+}
+body a {
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.3em;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  margin-bottom: 0.4em;
+}
+
+p.copy {
+  line-height: 1.3;
+}
+
+h2 {
+  text-align: center;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 5vh auto;
+}
+
+.section-hero {
+  height: 100vh;
+}
+
+.sticky-container {
+  position: relative;
+  height: 300vh;
+}
+
+.sticky-content {
+  position: sticky;
+  top: 0;
+}
+
+.video-background {
+  background-image: none !important;
+}
+
+/*# sourceMappingURL=index.css.map */
